@@ -43,3 +43,9 @@ The `main` test program performs the following steps:
 
 ## Dependencies
 - [Irvine32 Library](http://www.asmirvine.com) is required to run this program.
+
+## Important Note on Running the Code
+
+It's important to note that this program operates at an architectural level, so there are a few complexities when it comes to sharing or running the code on different machines; it is not immediately portable to other systems without configuration. This program is written in x86 assembly and is designed to run on a Windows machine using the MASM assembler. The primary purpose of this code is to demonstrate the implementation of macros and procedures in x86 assembly, rather than to be used as a fully portable or production-ready program.
+
+
