@@ -76,9 +76,9 @@ ENDM
 ; constants
 ; -----------------------------------------------------------------------------------
 
-VALID_INTEGERS = 10								; the desired number of valid integers input by the user
+VALID_INTEGERS = 10								   ; the desired number of valid integers input by the user
 
-ARRAYSIZE = 100									; length of the array for capturing user input 
+ARRAYSIZE = 100    									; length of the array for capturing user input 
 
 MOSTSIGBIT = 80000000h								; corresponds to highest bit, used to check sign
 
