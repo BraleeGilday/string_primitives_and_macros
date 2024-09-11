@@ -44,8 +44,19 @@ The `main` test program performs the following steps:
 ## Dependencies
 - [Irvine32 Library](http://www.asmirvine.com) is required to run this program.
 
-## Important Note on Running the Code
+## Usage
 
 It's important to note that this program operates at an architectural level, so there are a few complexities when it comes to sharing or running the code on different machines; it is not immediately portable to other systems without configuration. This program is written in x86 assembly and is designed to run on a Windows machine using the MASM assembler. The primary purpose of this code is to demonstrate the implementation of macros and procedures in x86 assembly, rather than to be used as a fully portable or production-ready program.
 
+## Example Execution
+User input in this example is shown in boldface italics.
 
+
+### Project Status
+This project is currently complete, with potential for future enhancements in further data validation. Currently, there is some range of values that are out of bounds but less than DWORD MAX that are not correctly rejected (ex. 3000000000, 4000000000, -3456789123). More work can be done to find the source of error and correct. 
+
+### License
+This project is licensed under the MIT License. See the LICENSE file for more information.
+
+### Contact
+Bralee Gilday - www.linkedin.com/in/bralee-gilday
