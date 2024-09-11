@@ -30,12 +30,13 @@ This program implements two macros and two procedures to handle string inputs an
 ## Test Program
 The `main` test program performs the following steps:
 
-1. Prompts the user to input 10 valid integers and displays the running subtotal of valid inputs.
+1. Prompts the user to input 10* valid integers and displays the running subtotal of valid inputs.
 2. Stores these numeric values in an array.
 3. Displays:
-   - The 10 integers.
+   - The 10* integers.
    - Their sum.
    - Their truncated average.
+*The desired number of valid integers input by the user is a constant, VALID_INTEGERS. This allows the number of desired inputs, for example, 3 or 10 or 100, to be adjusted in a single line rather than needing to be changed throughout the code body. 
 
 ## Program Constraints
 - This program does **not** use built-in functions like `ReadInt`, `ReadDec`, `WriteInt`, or `WriteDec`.
