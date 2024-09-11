@@ -32,6 +32,7 @@ The `main` test program performs the following steps:
    - The 10* integers.
    - Their sum.
    - Their truncated average.
+     
 *The desired number of valid integers input by the user is a constant, VALID_INTEGERS. This allows the number of desired inputs, for example, 3 or 10 or 100, to be adjusted in a single line rather than needing to be changed throughout the code body. 
 
 ## Program Constraints
@@ -39,10 +40,7 @@ The `main` test program performs the following steps:
 - Input is validated manually by reading the input as a string and converting it to numeric form.
 
 ## Dependencies
-- [Irvine32 Library](http://www.asmirvine.com) is required to run this program.
-
-## Usage
-It's important to note that this program operates at an architectural level, so there are a few complexities when it comes to sharing or running the code on different machines; it is not immediately portable to other systems without configuration. This program is written in x86 assembly and is designed to run on a Windows machine using the MASM assembler. The primary purpose of this code is to demonstrate the implementation of macros and procedures in x86 assembly, rather than to be used as a fully portable or production-ready program.
+- [Irvine32 Library](https://asmirvine.com/gettingStartedVS2015/index.htm) is required to run this program.
 
 ## Example Execution
 User input in this example is represented as \*\*input\*\*.
@@ -99,6 +97,9 @@ The truncated average is: 179
 
 Thank you for participating!
 ```
+
+## Usage
+It's important to note that this program operates at an architectural level, so there are a few complexities when it comes to sharing or running the code on different machines; it is not immediately portable to other systems without configuration. This program is written in x86 assembly and is designed to run on a Windows machine using the MASM assembler. The primary purpose of this code is to demonstrate the implementation of macros and procedures in x86 assembly, rather than to be used as a fully portable or production-ready program.
 
 ### Project Status
 This project is currently complete, with potential for future enhancements in further data validation. Currently, there is some range of values that are out of bounds but less than DWORD MAX that are not correctly rejected (ex. 3000000000, 4000000000, -3456789123). More work can be done to find the source of error and correct. 
