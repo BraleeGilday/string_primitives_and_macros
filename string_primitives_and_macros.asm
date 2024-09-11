@@ -89,8 +89,8 @@ MOSTSIGBIT = 80000000h									; corresponds to highest bit, used to check sign
 ; -----------------------------------------------------------------------------------
 .data
 
-	myTitle			BYTE	"PROGRAMMING ASSIGNMENT 6: Designing low-level I/O procedures		Bralee Gilday",13,10,
-							"EC1: Program numbers each line of user input and displays a running subtotal of the user's valid numbers using WriteVal.",13,10,13,10,0
+	myTitle			BYTE	"TITLE: Designing low-level I/O procedures		AUTHOR: Bralee Gilday",13,10,0
+				
 	instruction1	BYTE	"Welcome! Please provide ",0
 	instruction2	BYTE	" signed decimal integers.",13,10,13,10,
 							"Each number needs to be small enough to fit inside a 32-bit register. ",13,10,
@@ -261,7 +261,7 @@ main ENDP
 ;
 ; Invokes the mGetString macro to get user input in the form of a string of digits. 
 ; Then converts the string of ASCII digits to its numeric value representation using string primitives, 
-; validating the user’s input is a valid number (no letters, symbols, or blanks and doesn't exceed 32-bit register).
+; validating the userÂ’s input is a valid number (no letters, symbols, or blanks and doesn't exceed 32-bit register).
 ; Finally, stores this one value in a memory variable.  
 ;
 ; Receives: 
