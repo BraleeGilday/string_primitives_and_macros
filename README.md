@@ -1,12 +1,8 @@
 # string_primitives_and_macros
-x86 Assembly-implementation of a program that obtains 10 valid integers from the user, stores them in an array, and then displays a list of the integers, their sum, and truncated average. 
-
-The purpose of this assignment is to reinforce concepts related to string primitive instructions and macros.
-1. Designing, implementing, and calling low-level I/O procedures
-2. Implementing and using macros
-
-## MASM Program for String and Integer Processing
-This program implements two macros and two procedures to handle string inputs and signed integers, performing the following tasks:
+This x86 Assembly program prompts the user to input 10 valid integers, stores them in an array, and displays the integers, their sum, and truncated average. The purpose of this project was to practice designing, implementing, and calling low-level I/O procedures as well as implementing and using macros.
+   
+## Project Description
+This program implements two macros and two procedures to handle string inputs and signed integers, performing the following tasks.
 
 ## Macros
 1. **mGetString**
@@ -46,7 +42,6 @@ The `main` test program performs the following steps:
 - [Irvine32 Library](http://www.asmirvine.com) is required to run this program.
 
 ## Usage
-
 It's important to note that this program operates at an architectural level, so there are a few complexities when it comes to sharing or running the code on different machines; it is not immediately portable to other systems without configuration. This program is written in x86 assembly and is designed to run on a Windows machine using the MASM assembler. The primary purpose of this code is to demonstrate the implementation of macros and procedures in x86 assembly, rather than to be used as a fully portable or production-ready program.
 
 ## Example Execution
