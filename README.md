@@ -49,8 +49,60 @@ The `main` test program performs the following steps:
 It's important to note that this program operates at an architectural level, so there are a few complexities when it comes to sharing or running the code on different machines; it is not immediately portable to other systems without configuration. This program is written in x86 assembly and is designed to run on a Windows machine using the MASM assembler. The primary purpose of this code is to demonstrate the implementation of macros and procedures in x86 assembly, rather than to be used as a fully portable or production-ready program.
 
 ## Example Execution
-User input in this example is shown in boldface italics.
+User input in this example is represented as \*\*input\*\*.
 
+```plaintext
+TITLE: Designing low-level I/O procedures      AUTHOR: Bralee Gilday
+Welcome! Please provide 10 signed decimal integers.
+
+Each number needs to be small enough to fit inside a 32-bit register.
+After you have finished inputting the raw numbers, I will display a list of the integers, their sum, and their truncated average value.
+
+1. Please enter a signed number: **568**
+Subtotal of valid integers: 568
+
+2. Please enter a signed number: **987ytghj**
+ERROR: You did not enter a signed number or your number was too big. Please try again.
+
+2. Please enter a signed number: **12**
+Subtotal of valid integers: 580
+
+3. Please enter a signed number: **-12345**
+Subtotal of valid integers: -11765
+
+4. Please enter a signed number: **98765432345678**
+ERROR: You did not enter a signed number or your number was too big. Please try again.
+
+4. Please enter a signed number: **34567**
+Subtotal of valid integers: 22802
+
+5. Please enter a signed number: **-21000**
+Subtotal of valid integers: 1802
+
+6. Please enter a signed number: **-102**
+Subtotal of valid integers: 1700
+
+7. Please enter a signed number: **+23**
+Subtotal of valid integers: 1723
+
+8. Please enter a signed number: **34**
+Subtotal of valid integers: 1757
+
+9. Please enter a signed number: **11**
+Subtotal of valid integers: 1768
+
+10. Please enter a signed number: **30**
+Subtotal of valid integers: 1798
+
+You entered the following numbers:
+568, 12, -12345, 34567, -21000, -102, 23, 34, 11, 30
+
+The sum of these numbers is: 1798
+
+The truncated average is: 179
+
+Thank you for participating!
+```
 
 ### Project Status
 This project is currently complete, with potential for future enhancements in further data validation. Currently, there is some range of values that are out of bounds but less than DWORD MAX that are not correctly rejected (ex. 3000000000, 4000000000, -3456789123). More work can be done to find the source of error and correct. 
